@@ -5,10 +5,19 @@ using UnityEngine.UI;
 
 public class ManagerPreguntas : MonoBehaviour
 {
-    private float contador = 7f;
+    public float timePerPregunta = 7f;
+    public float delayEntrePreguntas = 2f;
+    private float contador = 0f;
     public Slider slider;
     
     public GameObject boton01, boton02;
+
+    private void Start()
+    {
+        slider.maxValue = timePerPregunta;
+        slider.value = timePerPregunta;
+        contador = timePerPregunta;
+    }
 
     void Update()
     {
@@ -22,7 +31,7 @@ public class ManagerPreguntas : MonoBehaviour
         if (slider.value == 0)
         {
             //Resetea(?) el slider
-            contador = 9f + Time.time;
+            contador = timePerPregunta + delayEntrePreguntas + Time.time;
         }
     }
 }
