@@ -21,6 +21,7 @@ public class ManagerPreguntas : MonoBehaviour
         slider.value = nuevoValor;
         if (slider.value == 0)
         {
+            //Resetea(?) el slider
             contador = 9f + Time.time;
         }
     }
