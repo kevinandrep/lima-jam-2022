@@ -7,8 +7,7 @@ public class ManagerPreguntas : MonoBehaviour
 {
     private float contador = 7f;
     public Slider slider;
-    public Text txtPuntaje;
-    private int puntaje = 0;
+    
 
     public GameObject boton01, boton02;
 
@@ -22,20 +21,4 @@ public class ManagerPreguntas : MonoBehaviour
         float nuevoValor = contador - Time.time;
         slider.value = nuevoValor;
     }
-
-    public void CalcularPuntaje()
-    {
-       if (boton01.CompareTag("A"))
-        {
-            puntaje += 10;
-            txtPuntaje.text = puntaje.ToString();
-        }
-       if (boton02.CompareTag("B"))
-        {
-            puntaje -= 10;
-            txtPuntaje.text = puntaje.ToString();
-        }
-    }
-
-
 }
