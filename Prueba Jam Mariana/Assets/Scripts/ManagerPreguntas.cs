@@ -8,7 +8,6 @@ public class ManagerPreguntas : MonoBehaviour
     private float contador = 7f;
     public Slider slider;
     
-
     public GameObject boton01, boton02;
 
     void Update()
