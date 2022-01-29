@@ -11,6 +11,7 @@ public class MostrarPreguntasUI : MonoBehaviour
     public Button botonA, botonB;
     public Text textoPregunta, textoRpta1, textoRpta2;
     public GameObject ui;
+    public Slider slider;
 
     private void Start()
     {
@@ -24,7 +25,7 @@ public class MostrarPreguntasUI : MonoBehaviour
             textoPregunta.text = itemPregunta[i].textoPregunta;
             textoRpta1.text = itemPregunta[i].textoRespuesta1;
             textoRpta2.text = itemPregunta[i].textoRespuesta2;
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(slider.value);
             ui.SetActive(false);
             yield return new WaitForSeconds(2f);
         }

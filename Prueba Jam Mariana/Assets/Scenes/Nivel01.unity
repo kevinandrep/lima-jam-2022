@@ -638,6 +638,7 @@ MonoBehaviour:
   textoRpta1: {fileID: 104777628}
   textoRpta2: {fileID: 991319389}
   ui: {fileID: 501410691}
+  slider: {fileID: 1782189337}
 --- !u!1 &2069951180 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2260273260040189591, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
