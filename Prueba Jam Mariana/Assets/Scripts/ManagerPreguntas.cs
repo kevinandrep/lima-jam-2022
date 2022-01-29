@@ -19,5 +19,9 @@ public class ManagerPreguntas : MonoBehaviour
     {
         float nuevoValor = contador - Time.time;
         slider.value = nuevoValor;
+        if (slider.value == 0)
+        {
+            contador = 9f + Time.time;
+        }
     }
 }
