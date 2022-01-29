@@ -590,6 +590,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c57f659c013d4848a7bd5f2d57926eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timePerPregunta: 5
+  delayEntrePreguntas: 2
   slider: {fileID: 1782189337}
   boton01: {fileID: 2069951180}
   boton02: {fileID: 1284606965}
@@ -622,16 +624,19 @@ MonoBehaviour:
   itemPregunta:
   - textoPregunta: Pregunta 01
     textoRespuesta1: rpta01
+    valor1: -30
     textoRespuesta2: rpta02
-    correcto: 0
+    valor2: 30
   - textoPregunta: Pregunta 02
     textoRespuesta1: 3
+    valor1: 3
     textoRespuesta2: 4
-    correcto: 0
+    valor2: 4
   - textoPregunta: Pregunta 03
     textoRespuesta1: 5
+    valor1: 1
     textoRespuesta2: 6
-    correcto: 0
+    valor2: -1
   botonA: {fileID: 2069951182}
   botonB: {fileID: 1284606967}
   textoPregunta: {fileID: 1534346497}
@@ -639,6 +644,7 @@ MonoBehaviour:
   textoRpta2: {fileID: 991319389}
   ui: {fileID: 501410691}
   slider: {fileID: 1782189337}
+  numPregunta: 0
 --- !u!1 &2069951180 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2260273260040189591, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
@@ -770,5 +776,25 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2260273259368091553, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1965543037}
+    - target: {fileID: 2260273259368091553, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
+      propertyPath: preguntas
+      value: 
+      objectReference: {fileID: 1965543038}
+    - target: {fileID: 2260273259794172226, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2260273260040189578, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1965543037}
+    - target: {fileID: 2260273260040189578, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
+      propertyPath: preguntas
+      value: 
+      objectReference: {fileID: 1965543038}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
