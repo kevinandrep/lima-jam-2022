@@ -27,7 +27,7 @@ public class MostrarPreguntasUI : MonoBehaviour
             textoPregunta.text = itemPregunta[numPregunta].textoPregunta;
             textoRpta1.text = itemPregunta[numPregunta].textoRespuesta1;
             textoRpta2.text = itemPregunta[numPregunta].textoRespuesta2;
-            yield return new WaitForSeconds(slider.value);
+            yield return new WaitUntil(() => slider.value == 0);
             ui.SetActive(false);
             yield return new WaitForSeconds(GetComponent<ManagerPreguntas>().delayEntrePreguntas);
         }

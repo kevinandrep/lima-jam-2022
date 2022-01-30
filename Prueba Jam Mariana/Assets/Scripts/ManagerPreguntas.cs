@@ -8,6 +8,7 @@ public class ManagerPreguntas : MonoBehaviour
     public float timePerPregunta = 7f;
     public float delayEntrePreguntas = 2f;
     private float contador = 0f;
+    [HideInInspector] public float offset = 0f;
     public Slider slider;
     
     public GameObject boton01, boton02;
@@ -26,12 +27,12 @@ public class ManagerPreguntas : MonoBehaviour
 
     public void Cronometro()
     {
-        float nuevoValor = contador - Time.time;
+        float nuevoValor = contador - Time.timeSinceLevelLoad - offset;
         slider.value = nuevoValor;
         if (slider.value == 0)
         {
             //Resetea(?) el slider
-            contador = timePerPregunta + delayEntrePreguntas + Time.time;
+            contador = timePerPregunta + delayEntrePreguntas + Time.timeSinceLevelLoad + offset;
         }
     }
 }

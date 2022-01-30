@@ -11,6 +11,7 @@ public class Respuestas : MonoBehaviour
     public void CalcularPuntaje()
     {
         MostrarPreguntasUI preguntas = manager.GetComponent<MostrarPreguntasUI>();
+        ManagerPreguntas managerPreguntas = manager.GetComponent<ManagerPreguntas>();
 
         if (gameObject.CompareTag("A"))
         {
@@ -24,5 +25,7 @@ public class Respuestas : MonoBehaviour
             txtPuntaje.text = puntaje.ToString();
             preguntas.numPregunta = preguntas.itemPregunta[preguntas.numPregunta].teLLevaA2 - 1;
         }
+        Debug.Log(puntaje);
+        managerPreguntas.offset += managerPreguntas.slider.value;
     }
 }
