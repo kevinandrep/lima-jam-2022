@@ -9,8 +9,6 @@ public class SfxControl : MonoBehaviour
     public ParticleSystem Lluvia;
     public int puntaje = 0;
 
-    public GameObject dsa;
-
     public PostProcessVolume m_Volume;
     void Start()
     {
@@ -21,7 +19,8 @@ public class SfxControl : MonoBehaviour
     {
         ControlParticulas(Niebla);
         ControlParticulas(Lluvia);
-        m_Volume.weight = Mathf.Abs((float.Parse(puntaje.ToString()) / 100) - 1);
+        float puntajeClamp = Mathf.Clamp(puntaje, 0, 100);
+        m_Volume.weight = Mathf.Clamp(Mathf.Abs((puntajeClamp / 100) - 1), 0.001f, 1);
     }
 
     public void ControlParticulas(ParticleSystem particulas)
@@ -35,6 +34,5 @@ public class SfxControl : MonoBehaviour
             if (puntaje < 0) particulas.Play(true);
         }
 
-        dsa.SetActive(true);
     }
 }
