@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 983351508016271962, guid: dafa26949912ca1449c2be769c5a773e, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 983351508016271962, guid: dafa26949912ca1449c2be769c5a773e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -152,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 983351508016271962, guid: dafa26949912ca1449c2be769c5a773e, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 983351508016271962, guid: dafa26949912ca1449c2be769c5a773e, type: 3}
       propertyPath: m_AnchorMin.y
@@ -168,15 +168,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 983351508016271962, guid: dafa26949912ca1449c2be769c5a773e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.66066
+      value: 0.73062396
       objectReference: {fileID: 0}
     - target: {fileID: 983351508016271962, guid: dafa26949912ca1449c2be769c5a773e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.100898
+      value: 3.986542
       objectReference: {fileID: 0}
     - target: {fileID: 983351508016271962, guid: dafa26949912ca1449c2be769c5a773e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.100898
+      value: 3.4292834
       objectReference: {fileID: 0}
     - target: {fileID: 983351508016271962, guid: dafa26949912ca1449c2be769c5a773e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -208,11 +208,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 983351508016271962, guid: dafa26949912ca1449c2be769c5a773e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1841
+      value: 57.3
       objectReference: {fileID: 0}
     - target: {fileID: 983351508016271962, guid: dafa26949912ca1449c2be769c5a773e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -63
+      value: -50.2
       objectReference: {fileID: 0}
     - target: {fileID: 983351508016271962, guid: dafa26949912ca1449c2be769c5a773e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -370,15 +370,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 73d069c5f8ab842429647c13b4d61e9f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

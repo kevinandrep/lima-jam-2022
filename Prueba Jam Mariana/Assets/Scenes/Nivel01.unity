@@ -210,6 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 191261935}
   - component: {fileID: 191261934}
+  - component: {fileID: 191261936}
   m_Layer: 7
   m_Name: GlobalPost
   m_TagString: Untagged
@@ -248,6 +249,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &191261936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191261933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8197c122bf0a8014680ebacad5e09717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Niebla: {fileID: 1659908001}
+  Lluvia: {fileID: 459337744}
+  puntaje: 0
+  dsa: {fileID: 0}
+  m_Volume: {fileID: 191261934}
 --- !u!1 &459337742
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,13 +918,13 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 3000
     size3D: 0
     rotation3D: 1
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 3
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1165,7 +1183,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 240
+      scalar: 291.2
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -5485,6 +5503,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1055881137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1055881138}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1055881138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055881137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 130.90929, y: 1064.7327, z: 0.07611084}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1211040209
 GameObject:
   m_ObjectHideFlags: 0
@@ -5793,6 +5841,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &1659908001 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3956656562074744239, guid: c1d0501f70b22564cbe0143b9be4e53a, type: 3}
+  m_PrefabInstance: {fileID: 3956656563169117749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1782189337 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2260273259794172226, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
@@ -6139,6 +6192,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2260273258116694983, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
+      propertyPath: m_Text
+      value: SI
+      objectReference: {fileID: 0}
     - target: {fileID: 2260273258538495960, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
       propertyPath: m_Name
       value: 1
@@ -6246,6 +6303,10 @@ PrefabInstance:
     - target: {fileID: 2260273258668767131, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -1033
+      objectReference: {fileID: 0}
+    - target: {fileID: 2260273258973942022, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
+      propertyPath: m_Text
+      value: NO
       objectReference: {fileID: 0}
     - target: {fileID: 2260273259368091553, guid: 8606f51334f07124f9855d464f9b701a, type: 3}
       propertyPath: manager
