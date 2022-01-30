@@ -16,11 +16,13 @@ public class Respuestas : MonoBehaviour
         {
             puntaje += preguntas.itemPregunta[preguntas.numPregunta].valor1;
             txtPuntaje.text = puntaje.ToString();
+            preguntas.numPregunta = preguntas.itemPregunta[preguntas.numPregunta].teLLevaA1 - 1;
         }
         else if (gameObject.CompareTag("B"))
         {
             puntaje += preguntas.itemPregunta[preguntas.numPregunta].valor2;
             txtPuntaje.text = puntaje.ToString();
+            preguntas.numPregunta = preguntas.itemPregunta[preguntas.numPregunta].teLLevaA2 - 1;
         }
     }
 }

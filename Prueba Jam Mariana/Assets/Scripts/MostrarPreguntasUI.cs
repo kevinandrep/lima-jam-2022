@@ -21,7 +21,7 @@ public class MostrarPreguntasUI : MonoBehaviour
     }
     IEnumerator MostrarOcultarBotones()
     {
-        while (numPregunta < 30)
+        while (numPregunta < 15)
         {
             ui.SetActive(true);
             textoPregunta.text = itemPregunta[numPregunta].textoPregunta;
@@ -30,7 +30,6 @@ public class MostrarPreguntasUI : MonoBehaviour
             yield return new WaitForSeconds(slider.value);
             ui.SetActive(false);
             yield return new WaitForSeconds(GetComponent<ManagerPreguntas>().delayEntrePreguntas);
-            numPregunta++;
         }
     }
 }
