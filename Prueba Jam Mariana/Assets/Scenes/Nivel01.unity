@@ -554,7 +554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c57f659c013d4848a7bd5f2d57926eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timePerPregunta: 5
+  timePerPregunta: 20
   delayEntrePreguntas: 2
   slider: {fileID: 1782189337}
   boton01: {fileID: 2069951180}
@@ -591,18 +591,134 @@ MonoBehaviour:
       seres vivos para tus experimentos m\xE1gicos?"
     textoRespuesta1: SI
     valor1: -30
+    teLLevaA1: 2
     textoRespuesta2: NO
     valor2: 30
-  - textoPregunta: Pregunta 02
-    textoRespuesta1: 3
+    teLLevaA2: 3
+  - textoPregunta: "\xA1Has usado animales para tus primeros experimentos y han sido
+      un \xE9xito! Has confirmado algunas teor\xEDas pero tienes nuevas dudas y necesitas
+      mejorar \xBFUsar\xEDas seres humanos para tus pruebas? "
+    textoRespuesta1: SI
     valor1: 3
-    textoRespuesta2: 4
+    teLLevaA1: 5
+    textoRespuesta2: NO
     valor2: 4
-  - textoPregunta: Pregunta 03
-    textoRespuesta1: 5
+    teLLevaA2: 4
+  - textoPregunta: "Tienes \xE9tica, no has experimentado con seres vivos y mucha
+      de tu teor\xEDa ha sido reconocida por tus colegas. \xBFBrindar\xE1n charlas
+      para explicar tu teor\xEDa en las universidades m\xE1gicas? "
+    textoRespuesta1: SI
     valor1: 1
-    textoRespuesta2: 6
+    teLLevaA1: 4
+    textoRespuesta2: NO
     valor2: -1
+    teLLevaA2: 5
+  - textoPregunta: "Tu fama te precede, te ha invitado el rey para que expongas tus
+      ideas e investigaciones \xBFExpones tus ideas ante el rey y sus s\xFAbditos?"
+    textoRespuesta1: SI
+    valor1: 1
+    teLLevaA1: 5
+    textoRespuesta2: NO
+    valor2: -1
+    teLLevaA2: 7
+  - textoPregunta: "El rey te llama secretamente para conversar de tu teor\xEDa y
+      quiere que ahondes en tus conocimientos con objetivos militares. Sabes que
+      usar\xE1 tu conocimiento para invadir otros reinos. \xBFAcepas trabajar con
+      el rey?"
+    textoRespuesta1: SI
+    valor1: 1
+    teLLevaA1: 13
+    textoRespuesta2: NO
+    valor2: -1
+    teLLevaA2: 11
+  - textoPregunta: "Has trabajado durante varios a\xF1os y has tenido varios logros.
+      Deseas retirarte para vivir una vida tranquila y disfrutar de tu riqueza \xBFTe
+      retiras?"
+    textoRespuesta1: SI
+    valor1: 1
+    teLLevaA1: 16
+    textoRespuesta2: NO
+    valor2: -1
+    teLLevaA2: 16
+  - textoPregunta: "La reina te convoca para que uses tu magia para el bien del pueblo
+      y del reino. Desea mejorar la vida de los s\xFAbditos con tu conocimiento.
+      \xBFAceptas trabajar con la reina?"
+    textoRespuesta1: SI
+    valor1: 1
+    teLLevaA1: 8
+    textoRespuesta2: NO
+    valor2: -1
+    teLLevaA2: 9
+  - textoPregunta: "Has estado trabajando con la reina para mejorar la vida de su
+      gente, ella muy contenta te propone que te cases con una prima tercera suya
+      \xBFAceptas el matrimonio?"
+    textoRespuesta1: SI
+    valor1: 1
+    teLLevaA1: 9
+    textoRespuesta2: NO
+    valor2: -1
+    teLLevaA2: 10
+  - textoPregunta: "Te has casado con una prima tercera de la reina, todos est\xE1n
+      muy felices por ustedes y tu esposa te quiere \xBFTienes hijos?"
+    textoRespuesta1: SI
+    valor1: 10
+    teLLevaA1: 10
+    textoRespuesta2: NO
+    valor2: -1
+    teLLevaA2: 6
+  - textoPregunta: "Te has casado y tienes varios hijos con tu esposa, algunos han
+      demostrado inter\xE9s y habilidad por la magia \xBFLes ense\xF1as el uso de
+      la magia? "
+    textoRespuesta1: SI
+    valor1: 1
+    teLLevaA1: 6
+    textoRespuesta2: NO
+    valor2: -1
+    teLLevaA2: 6
+  - textoPregunta: "Has tenido que escapar del reino porque te negaste a obedecer
+      al rey y usar tu investigaci\xF3n con fines militares. Te has ocultado en un
+      pueblo de un bosque lejano. \xBFDejar\xE1s la magia por una vida m\xE1s tranquila
+      en un pueblo lejano?"
+    textoRespuesta1: SI
+    valor1: 1
+    teLLevaA1: 6
+    textoRespuesta2: NO
+    valor2: -1
+    teLLevaA2: 12
+  - textoPregunta: "Has tenido que escapar del reino porque te negaste a obedecer
+      al rey y usar tu investigaci\xF3n con fines militares. Te has ido a otro reino
+      donde nadie te conoce. \xBFTe quedar\xE1s a vivir en este nuevo reino?"
+    textoRespuesta1: SI
+    valor1: 1
+    teLLevaA1: 13
+    textoRespuesta2: NO
+    valor2: -1
+    teLLevaA2: 14
+  - textoPregunta: "Algunos Nobles con malas intenciones te buscan para que los ayudes
+      a tener m\xE1s poder y riqueza con tu magia. \xBFAceptas la propuesta?"
+    textoRespuesta1: SI
+    valor1: 1
+    teLLevaA1: 6
+    textoRespuesta2: NO
+    valor2: -1
+    teLLevaA2: 14
+  - textoPregunta: "Algunos nobles te buscan para que los ayudes a mejorar la vida
+      de sus s\xFAbditos con tu magia y conocimientos. \xBFAceptas trabajar con ellos?"
+    textoRespuesta1: SI
+    valor1: 1
+    teLLevaA1: 15
+    textoRespuesta2: NO
+    valor2: -1
+    teLLevaA2: 15
+  - textoPregunta: "Durante tus trabajos, conoces a un viejo alquimista que desea
+      ense\xF1arte los secretos para curar muchas enfermedades a cambio de que uses
+      este conocimiento en beneficio de los dem\xE1s \xBFAceptas el trato del alquimista?"
+    textoRespuesta1: SI
+    valor1: 1
+    teLLevaA1: 6
+    textoRespuesta2: NO
+    valor2: -1
+    teLLevaA2: 6
   botonA: {fileID: 2069951182}
   botonB: {fileID: 1284606967}
   textoPregunta: {fileID: 1534346497}

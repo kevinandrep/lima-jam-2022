@@ -10,8 +10,10 @@ public class Pregunta
     //Respuestas y Valor
     public string textoRespuesta1;
     public int valor1 = 0;
+    public int teLLevaA1 = 0;
     public string textoRespuesta2;
     public int valor2 = 0;
+    public int teLLevaA2 = 0;
 
     public Pregunta(string textopreg, string texto1r, int v1, string texto2r, int v2)
     {
