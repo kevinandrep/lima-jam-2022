@@ -10,6 +10,8 @@ public class SfxControl : MonoBehaviour
     public int puntaje = 0;
 
     public PostProcessVolume m_Volume;
+
+    public AudioSource alluvia, apajaro;
     void Start()
     {
 
@@ -19,20 +21,42 @@ public class SfxControl : MonoBehaviour
     {
         ControlParticulas(Niebla);
         ControlParticulas(Lluvia);
-        float puntajeClamp = Mathf.Clamp(puntaje, 0, 100);
-        m_Volume.weight = Mathf.Clamp(Mathf.Abs((puntajeClamp / 100) - 1), 0.001f, 1);
+        float puntajeClamp = Mathf.Clamp(Respuestas.puntaje, 0, 100);
+        m_Volume.weight = Mathf.Clamp(Mathf.Abs((puntajeClamp / 100 * 6) - 1), 0.001f, 1);
+        Debug.Log(Respuestas.puntaje);
+
+        if (Respuestas.puntaje > 0)
+        {
+            alluvia.Stop();
+            if (!apajaro.isPlaying)
+            {
+                apajaro.Play();
+            }
+        }
+        else if (Respuestas.puntaje <= 0)
+        {
+            apajaro.Stop();
+            if (!alluvia.isPlaying)
+            {
+                alluvia.Play();
+            }
+        }
     }
 
     public void ControlParticulas(ParticleSystem particulas)
     {
         if (particulas.isPlaying)
         {
-            if (puntaje > 0) particulas.Stop(true);
+            if (Respuestas.puntaje > 0) particulas.Stop(true);
         }
         else if (particulas.isStopped)
         {
-            if (puntaje < 0) particulas.Play(true);
+            if (Respuestas.puntaje < 0) particulas.Play(true);
         }
-
     }
+
+    //public void ControlAudio()
+    //{
+    //    if (AudioSource)
+    //}
 }

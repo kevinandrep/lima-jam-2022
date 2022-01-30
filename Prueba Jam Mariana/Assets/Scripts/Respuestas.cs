@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Respuestas : MonoBehaviour
 {
     public Text txtPuntaje;
-    private static int puntaje = 0;
+    public static int puntaje = 0;
     public GameObject manager;
     public void CalcularPuntaje()
     {

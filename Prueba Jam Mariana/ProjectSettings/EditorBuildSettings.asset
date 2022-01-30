@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: 0b59c1fcdbe79824b976accfdbc6e474
+  - enabled: 1
+    path: Assets/Scenes/GameOverMalo.unity
+    guid: 397c88b03863da54286202b402e0571a
   m_configObjects: {}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MostrarPreguntasUI : MonoBehaviour
 {
@@ -31,5 +32,9 @@ public class MostrarPreguntasUI : MonoBehaviour
             ui.SetActive(false);
             yield return new WaitForSeconds(GetComponent<ManagerPreguntas>().delayEntrePreguntas);
         }
+
+        if (Respuestas.puntaje >= 0) SceneManager.LoadScene("GameOverBueno");
+        else SceneManager.LoadScene("GameOverMalo");
+        Respuestas.puntaje = 0;
     }
 }
