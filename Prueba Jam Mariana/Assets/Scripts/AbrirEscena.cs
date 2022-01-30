@@ -18,6 +18,13 @@ public class AbrirEscena : MonoBehaviour
         
     }
 
-    //metodo para abrir
-        //SceneManager.loadScene("Nivel1");
+    public void OpenScene(string nombreEscena)
+    {
+        SceneManager.LoadScene(nombreEscena);
+    }
+
+    public void Salir()
+    {
+        Application.Quit();
+    }
 }
