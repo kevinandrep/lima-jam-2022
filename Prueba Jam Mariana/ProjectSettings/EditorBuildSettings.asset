@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOverMalo.unity
     guid: 397c88b03863da54286202b402e0571a
+  - enabled: 1
+    path: Assets/Scenes/GameOverBueno.unity
+    guid: 4edbf9ef9222864458c944b06e8102ae
   m_configObjects: {}

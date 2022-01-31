@@ -33,7 +33,7 @@ public class MostrarPreguntasUI : MonoBehaviour
             yield return new WaitForSeconds(GetComponent<ManagerPreguntas>().delayEntrePreguntas);
         }
 
-        if (Respuestas.puntaje >= 0) SceneManager.LoadScene("GameOverBueno");
+        if (Respuestas.puntaje > 0) SceneManager.LoadScene("GameOverBueno");
         else SceneManager.LoadScene("GameOverMalo");
         Respuestas.puntaje = 0;
     }
